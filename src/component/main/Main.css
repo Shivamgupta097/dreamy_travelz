@@ -1,0 +1,44 @@
+.main_container {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3%;
+  /* padding-top: 7%; */
+
+  /* padding-top: 7; */
+}
+.main_container .image {
+  width: 100%;
+  flex: 1 1 45rem;
+}
+.main_container .content {
+  flex: 1 1 45rem;
+  margin: 0 2rem;
+
+  margin-top: 10rem;
+}
+
+.main_container .content h3 {
+  color: rgb(46, 44, 44);
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.main_container .content p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+@media (max-width: 1056px) {
+  .main_container .content {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .main_container .content h3 {
+    font-size: 2.3rem;
+  }
+}

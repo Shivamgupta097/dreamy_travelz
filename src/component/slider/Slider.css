@@ -1,0 +1,27 @@
+.container-slider {
+  max-width: 100vw;
+
+  height: 60vh;
+
+  margin: 5rem auto 0;
+  position: relative;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.active {
+  opacity: 1;
+}

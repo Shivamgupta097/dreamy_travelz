@@ -1,0 +1,95 @@
+.package_section {
+  margin: 0 2rem;
+}
+
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.packages {
+  position: relative;
+  padding-bottom: 1rem;
+  max-height: fit-content;
+  border-radius: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.packages:hover {
+  transform: scale3d(0.98, 0.98, 1);
+}
+.packages img:hover {
+  transform: scale3d(0.98, 0.98, 1);
+}
+
+.packages img {
+  width: 100%;
+  object-fit: cover;
+}
+.packages .place {
+  position: absolute;
+  top: 1rem;
+  left: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.packages span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.packages .rating {
+  display: block;
+  text-align: center;
+}
+.price_per_trip {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}
+.packages .days {
+  margin-right: 2px;
+  /* margin-left: 3rem; */
+}
+
+.packages span #cut_price {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0 0.3rem;
+  text-decoration: line-through;
+}
+
+.packages h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #fff;
+}
+.packages button {
+  padding: 0.5rem 1.3rem;
+  /* margin: 5% 25%; */
+  margin-left: 35%;
+  margin-top: 2rem;
+}
+
+.more_details {
+  color: red;
+  font-size: 4rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.more_details :hover {
+  background: none;
+}
+
+/* .more_details {
+  display: none;
+}
+
+.more_details:hover {
+  color: rgb(199, 15, 46);
+} */

@@ -1,0 +1,75 @@
+section .overview {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+.place_left_container,
+.place_right_container {
+  background-color: #fff;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+
+  /* clear: both; */
+  padding: 2rem 0;
+}
+
+.place_left_container:hover,
+.place_right_container:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.place_left_container .routine_description {
+  display: flex;
+  gap: 1.3rem;
+  margin: 0 1.5rem;
+}
+.place_right_container .routine_description {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.3rem;
+  margin: 0 1.5rem;
+}
+.routine_description .day_image {
+  width: 35rem;
+  object-fit: cover;
+  margin: 0 2rem 0 1rem;
+}
+
+.detailed_daywise {
+  font-size: 2.5rem;
+}
+
+.top_section {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.top_section .days {
+  margin-right: 3.5rem;
+}
+
+.day_routine {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 713px) {
+  .place_left_container .routine_description,
+  .place_right_container .routine_description {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .routine_description .day_image {
+    width: auto;
+  }
+  section h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  section h1 {
+    font-size: 1.85rem;
+  }
+}
