@@ -1,8 +1,8 @@
 import React from "react";
-import "./Form.css";
+import "./Date.css";
 import "../button/Button.css";
 
-const Form = () => {
+const Date = () => {
   return (
     <>
       <section className="destination_form">
@@ -34,4 +34,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Date;

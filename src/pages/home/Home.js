@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../../component/main/Main";
 import Navbar from "../../component/navbar/Navbar";
-import Form from "../../component/form/Form";
+import Date from "../../component/date/Date";
 import Services from "../../component/services/Services.js";
 
 import Packages from "../../component/packages/Packages.js";
@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Navbar />
       <Main />
-      <Form />
+      <Date />
       <Services />
       <Packages />
 

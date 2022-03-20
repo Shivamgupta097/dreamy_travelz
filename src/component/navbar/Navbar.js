@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <>
       <nav>
@@ -36,7 +37,7 @@ const Navbar = () => {
             <li>
               <BsGlobe id="globe" />
             </li>
-            <li className="user">
+            <li className="user" onClick={setShowLogin(!showLogin)}>
               <AiOutlineMenu />
               <IoPersonCircleSharp id="person" />
             </li>
